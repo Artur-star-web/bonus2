@@ -2,18 +2,14 @@ public class Main {
     public static void main(String[] args) {
         int balance = 0;
         int amount = 1500;
-        int bonusThreshold = 100;
-        int bonusPoints = 1;
-        int bonus = 0;
+        int account = amount + balance;
 
-        if (amount >= bonusThreshold) {
-            bonus = amount / bonusThreshold * bonusPoints;
+        if (account > 1000) {
+            int procent = (account / 100 * 1);
+            System.out.println("Бонус:" + procent);
+            System.out.println("Итоговый баланс:" + account);
+        } else {
+            System.out.println("Итоговый бонус:" + 0);
         }
-
-        int totalAccount = balance + amount + bonus;
-        
-        System.out.println("Сумма пополнения: " + amount + " рублей");
-        System.out.println("Начислено бонусов: " + bonus);
-        System.out.println("Итоговый счёт: " + totalAccount + " рублей");
     }
 }
