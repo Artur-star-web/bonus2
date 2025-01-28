@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         int balance = 100;
-        int amount = 1500;
+        int amount = 1100;
         int account = amount + balance;
 
+        int bonus;
         if (account > 1000) {
-            int procent = (amount / 100 * 1);
-            System.out.println("Бонус: " + procent);
-            System.out.println("Итоговый баланс: " + account);
+            bonus = (amount / 100);
+            System.out.println("Бонус: " + bonus);
+            System.out.println("Итоговый баланс: " + (account + bonus));
         } else {
-            System.out.println("Итоговый бонус:" + 0);
+            bonus = 0;
+            System.out.println("Итоговый бонус:" + bonus);
         }
-
-        System.out.println();
     }
 
 }
